@@ -1,0 +1,103 @@
+.choose {
+  margin-top: 120px;
+  padding-bottom: 120px;
+  // .choose__container
+
+  &__container {
+  }
+
+  // .choose__title
+
+  &__title {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 59px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #333333;
+    margin-bottom: 6px;
+  }
+
+  // .choose__subtitle
+
+  &__subtitle {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #666666;
+    margin-bottom: 64px;
+  }
+
+  // .choose__cards
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    gap: 20px;
+  }
+
+  // .choose__card
+
+  &__card {
+    background: #ffffff;
+    border: 0.3px solid #fff;
+    border-radius: 15px;
+  }
+  &__card:hover {
+    background: #FFFFFF;
+    border: 0.3px solid #1266E3;
+    box-shadow: 3px 7px 50px rgba(4, 21, 47, 0.15);
+    transition: all 0.5s ease-out;
+  }
+  
+}
+.container {
+}
+.title {
+}
+.card {
+  // .card__icon
+
+  &__icon {
+    padding: 65px 112px 65px 113px;
+    text-align: center;
+  }
+
+  // .card__title
+
+  &__title {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 13px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #333333;
+  }
+
+  // .card__desc
+
+  &__desc {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    padding: 0 11px 39px 12px;
+    color: #666666;
+  }
+}

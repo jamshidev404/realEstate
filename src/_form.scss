@@ -1,0 +1,332 @@
+.form {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 1205px;
+  margin-bottom: 120px;
+  &__backimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  // .form__container
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 51px;
+
+    @media (max-width: 975px) {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  // .form__text
+
+  &__text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 65%;
+    padding-top: 301px;
+    padding-bottom: 301px;
+    column-gap: 42px;
+
+    @media (max-width: 975px) {
+        padding-bottom: 50px;
+    }
+  }
+
+  // .form__title
+
+  &__title {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 51px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #ffffff;
+    padding-bottom: 6px;
+  }
+
+  // .form__card
+
+  &__card {
+    max-width: 254px;
+  }
+
+  // .form__forma
+
+  &__forma {
+    margin-top: 120px;
+    background-color: #ffffff;
+    margin-bottom: 120px;
+    border-radius: 20px;
+  }
+
+  // .form__select
+
+  &__select {
+    padding: 10px 31px 20px 28px;
+  }
+}
+.container {
+}
+.card {
+  // .card__number
+
+  &__number {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #ffffff;
+    opacity: 0.4;
+    text-align: left;
+    padding-bottom: 13px;
+  }
+
+  // .card__title
+
+  &__title {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+
+  // .card__desc
+
+  &__description {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #d0e1fb;
+    text-align: left;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+}
+
+.card2 {
+  margin-top: -20px;
+}
+
+.card3 {
+  margin-top: -55px;
+}
+
+.forma {
+    height: 965px;
+  // .forma__title
+
+  &__title {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #333333;
+    padding: 35px 0 13px 28px;
+  }
+
+  // .forma__subtitle
+
+  &__subtitle {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #666666;
+    padding: 0 30px 19px 28px;
+  }
+}
+.input {
+  // .input__text
+
+  &__text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #4c4c4c;
+    padding-left: 28px;
+  }
+
+  // .input__1
+
+  &__1 {
+  }
+
+  // .input__2
+
+  &__2 {
+  }
+}
+.for {
+  // .for__name
+
+  &__name {
+    display: flex;
+    padding: 0 31px 10px 28px;
+    gap: 16px;
+  }
+}
+.email {
+  padding: 0 31px 10px 28px;
+
+  // .email__input
+  &__input {
+    width: 100%;
+    border: 1px solid #808080;
+    padding: 13px 0 13px 10px;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #808080;
+  }
+}
+.agreement {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #4c4c4c;
+  padding-left: 28px;
+  margin-bottom: 4px;
+}
+.checkbox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 28px;
+  // .checkbox__input
+
+  &__input {
+    align-self: flex-start;
+    padding-top: 3px;
+    width: 14px;
+    height: 14px;
+  }
+
+  // .checkbox__text
+
+  &__text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #808080;
+    align-self: flex-start;
+    // padding-right: 70px;
+  }
+}
+
+select {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #808080;
+  padding: 13px 0 13px 10px;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.name__class {
+  border: 1px solid #666666;
+  width: 100%;
+  padding: 13px 68px 13px 10px;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #808080;
+}
+
+.for__size {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 31px 13px 28px;
+  gap: 10px;
+
+  .input__1 {
+    width: 49%;
+  }
+  .input__2 {
+    width: 48%;
+  }
+  .input__3 {
+    width: 49%;
+  }
+  .input__4 {
+    width: 48%;
+  }
+}
+
+.form__button {
+  background: #2a79ee;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 12px 0px 14px;
+  margin: 44px 31px 42px 28px;
+//   margin-right: 31px;
+  width: 90%;
+}

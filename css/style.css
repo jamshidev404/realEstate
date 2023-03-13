@@ -1,0 +1,1675 @@
+.header {
+  position: relative;
+}
+.header__container {
+  max-width: 1152px;
+  position: relative;
+  z-index: 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 926px) {
+  .header__logo {
+    padding-top: 25px;
+  }
+}
+.header__items {
+  display: flex;
+  align-items: center;
+}
+.header__button {
+  padding: 20px 0 17px;
+}
+@media (max-width: 926px) {
+  .header__button {
+    display: none;
+  }
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 46px;
+  align-items: center;
+}
+@media (max-width: 926px) {
+  .items {
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    background: linear-gradient(0deg, rgba(7, 42, 95, 0.8), rgba(7, 42, 95, 0.8)), url(.jpg);
+    width: 100%;
+    height: 100%;
+    padding-top: 65px;
+  }
+}
+
+.item {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #dce6ff;
+}
+@media (max-width: 926px) {
+  .item {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
+
+.item:hover {
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 30px;
+  width: 171px;
+  height: 46px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #272727;
+}
+
+.back__image1 {
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+.back__image1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.back__image2 {
+  position: absolute;
+  top: 0;
+}
+.back__image2 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #dce6ff;
+  margin-top: 30px;
+  position: absolute;
+  top: 60px;
+  z-index: 6;
+}
+
+.gamburger {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 7;
+  margin-top: 25px;
+}
+
+.gamburger::before,
+.gamburger::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gamburger::before {
+  top: -10px;
+  width: 20px;
+}
+
+.gamburger::after {
+  top: 10px;
+  width: 25px;
+}
+
+.toggle-menu {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  z-index: 8;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.gamburger,
+.toggle-menu {
+  display: none;
+}
+@media (max-width: 926px) {
+  .gamburger,
+  .toggle-menu {
+    display: block;
+  }
+}
+
+.header__items input:checked ~ .gamburger {
+  background: transparent;
+}
+
+.header__items input:checked ~ .gamburger::before {
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.header__items input:checked ~ .gamburger::after {
+  top: 0;
+  transform: rotate(45deg);
+  width: 30px;
+}
+
+.header__items input:checked ~ .items {
+  right: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjusst: 100%;
+  -moz-text-size-adjusst: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input:-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:-moz-focus-innesr {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  background: #F8F9FB;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 0 0 auto;
+}
+
+.banner {
+  margin-bottom: 150px;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-top: -83px;
+}
+.banner__container {
+  position: relative;
+  z-index: 5;
+  padding-top: 320px;
+}
+.banner__desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 83px;
+  color: #ffffff;
+}
+@media (max-width: 479px) {
+  .banner__desc {
+    margin-bottom: 10px;
+  }
+}
+.banner__btn {
+  display: flex;
+  gap: 5px;
+  position: relative;
+  z-index: 6;
+}
+.banner__table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background: #fff;
+  border-radius: 0px 10px 10px 10px;
+  gap: 12px;
+  margin-right: 10px;
+  padding-left: 23px;
+}
+.main__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 105px;
+  margin-bottom: 7px;
+  color: #ffffff;
+}
+@media (max-width: 575px) {
+  .main__title {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 75px;
+  }
+}
+
+.btn-1 {
+  width: 112px;
+  height: 37px;
+  background: #ffffff;
+  opacity: 0.3;
+  border-radius: 6px 6px 0px 0px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #050810;
+}
+.btn-1:hover {
+  background-color: #fff;
+  border-radius: 6px 6px 0px 0px;
+  color: #050810;
+  opacity: 1;
+}
+
+.btn-2 {
+  width: 112px;
+  height: 37px;
+  background: #ffffff;
+  opacity: 0.3;
+  border-radius: 6px 6px 0px 0px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #050810;
+}
+.btn-2:hover {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 6px 6px 0px 0px;
+  color: #050810;
+  opacity: 1;
+}
+
+.btn-3 {
+  width: 112px;
+  height: 37px;
+  background: #ffffff;
+  opacity: 0.3;
+  border-radius: 6px 6px 0px 0px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #050810;
+}
+.btn-3:hover {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 6px 6px 0px 0px;
+  color: #050810;
+  opacity: 1;
+}
+
+.table__top {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #999999;
+  padding-top: 13px;
+  padding-bottom: 8px;
+}
+.table__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e7f0fd;
+  border-radius: 5px;
+  padding: 8px 0px 9px 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #191919;
+}
+.table__bottom .for__strelka {
+  padding-right: 17px;
+  padding-left: 55px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+}
+.table__bottom .for__strelka span img {
+  vertical-align: middle;
+}
+.table__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 46px;
+  background: #1266e3;
+  border-radius: 9.28725px;
+  height: 50px;
+  margin: 37px 20px 13px 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.table-3 {
+  min-width: 277px;
+}
+
+.back__image1 {
+  margin-bottom: 151px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.back__image1 img {
+  width: 100%;
+  min-height: 1200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.back__image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.back__image2 img {
+  min-height: 1200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.helping {
+  background-color: #fff;
+  margin-top: 350px;
+}
+@media (max-width: 1099px) {
+  .helping {
+    margin-top: 250px;
+  }
+}
+@media (max-width: 629px) {
+  .helping {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 598px) {
+  .helping {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 581px) {
+  .helping {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 575px) {
+  .helping {
+    margin-top: 38px;
+  }
+}
+@media (max-width: 479px) {
+  .helping {
+    margin-top: 27px;
+  }
+}
+.helping__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 74px;
+}
+@media (max-width: 900px) {
+  .helping__container {
+    display: grid;
+  }
+}
+.helping__left {
+  margin-top: 250px;
+  padding-bottom: 120px;
+}
+@media (max-width: 900px) {
+  .helping__left {
+    padding-bottom: 0px;
+  }
+}
+.helping__left img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 901px) {
+  .helping__left img {
+    width: 100%;
+  }
+}
+.helping__right {
+  padding-top: 241px;
+  padding-bottom: 147px;
+}
+@media (max-width: 900px) {
+  .helping__right {
+    padding-top: 0px;
+  }
+}
+.helping__desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.01rem;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.helping__icons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+}
+.helping__icon {
+  display: flex;
+  gap: 34px;
+}
+@media (max-width: 580px) {
+  .helping__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.helping__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #666666;
+  text-align: center;
+}
+.helping__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 59px;
+  letter-spacing: 0.01rem;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+
+.icon {
+  width: 116px;
+  height: 116px;
+  background: #e7f0fd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon :hover {
+  background: #4288f0;
+  position: relative;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.choose {
+  margin-top: 120px;
+  padding-bottom: 120px;
+}
+.choose__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 59px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #333333;
+  margin-bottom: 6px;
+}
+.choose__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #666666;
+  margin-bottom: 64px;
+}
+.choose__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: 20px;
+}
+.choose__card {
+  background: #ffffff;
+  border: 0.3px solid #fff;
+  border-radius: 15px;
+}
+.choose__card:hover {
+  background: #FFFFFF;
+  border: 0.3px solid #1266E3;
+  box-shadow: 3px 7px 50px rgba(4, 21, 47, 0.15);
+  transition: all 0.5s ease-out;
+}
+
+.card__icon {
+  padding: 65px 112px 65px 113px;
+  text-align: center;
+}
+.card__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 13px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #333333;
+}
+.card__desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  padding: 0 11px 39px 12px;
+  color: #666666;
+}
+
+.sale {
+  background-color: #fff;
+  margin-bottom: 125px;
+}
+.sale__container {
+  padding-top: 165px;
+}
+.sale__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #333333;
+  margin-top: -20px;
+}
+.sale__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #666666;
+  margin-bottom: 64px;
+}
+.sale__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
+}
+.sale__card {
+  margin-bottom: 50px;
+}
+.sale__card:hover {
+  background: #ffffff;
+  border: 1px solid #1266e3;
+  box-shadow: 3px 7px 50px rgba(4, 21, 47, 0.15);
+  border-radius: 5px;
+  transition: all 1s ease-out;
+}
+.sale__icon {
+  padding-right: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.sale__icon img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sale__desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #b2b2b2;
+  margin-bottom: 18px;
+}
+.sale__price {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 27px;
+  color: #1266e3;
+}
+.sale__comfort {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 0 13px;
+}
+.sale__bads {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #999999;
+  display: flex;
+  gap: 10px;
+}
+.sale__baths {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #999999;
+  display: flex;
+  gap: 10px;
+}
+.sale__sqft {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #999999;
+  display: flex;
+  gap: 10px;
+}
+
+.title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.sale__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 30px;
+  height: 30px;
+  background: #e5e5e5;
+  border-radius: 50%;
+}
+
+.sale__location {
+  display: flex;
+  gap: 10px;
+}
+
+.sale__blue {
+  position: sticky;
+  top: -300px;
+  right: -255px;
+  position: relative;
+  width: 99px;
+}
+.sale__blue img {
+  height: 30px;
+}
+.sale__blue .for__sale {
+  position: absolute;
+  top: 4px;
+  left: 20px;
+  bottom: 4px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.brown__btn {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 4px 20px 4px 21px;
+  background: rgba(250, 91, 62, 0.6);
+  border-radius: 5px 5px 0px 0px;
+  max-width: 225px;
+  margin-left: 58px;
+  position: absolute;
+  top: 293px;
+}
+
+.btn__class {
+  display: flex;
+  justify-content: center;
+}
+
+.sale__btn {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #1266e3;
+  padding: 16px 127px 20px 130px;
+  align-self: center;
+  max-width: 360px;
+  background: #ffffff;
+  border: 1px solid #2a79ee;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.form {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 1205px;
+  margin-bottom: 120px;
+}
+.form__backimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.form__container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 51px;
+}
+@media (max-width: 975px) {
+  .form__container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.form__text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 65%;
+  padding-top: 301px;
+  padding-bottom: 301px;
+  -moz-column-gap: 42px;
+       column-gap: 42px;
+}
+@media (max-width: 975px) {
+  .form__text {
+    padding-bottom: 50px;
+  }
+}
+.form__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-bottom: 6px;
+}
+.form__card {
+  max-width: 254px;
+}
+.form__forma {
+  margin-top: 120px;
+  background-color: #ffffff;
+  margin-bottom: 120px;
+  border-radius: 20px;
+}
+.form__select {
+  padding: 10px 31px 20px 28px;
+}
+
+.card__number {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  opacity: 0.4;
+  text-align: left;
+  padding-bottom: 13px;
+}
+.card__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.card__description {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #d0e1fb;
+  text-align: left;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.card2 {
+  margin-top: -20px;
+}
+
+.card3 {
+  margin-top: -55px;
+}
+
+.forma {
+  height: 965px;
+}
+.forma__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #333333;
+  padding: 35px 0 13px 28px;
+}
+.forma__subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #666666;
+  padding: 0 30px 19px 28px;
+}
+
+.input__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #4c4c4c;
+  padding-left: 28px;
+}
+.for__name {
+  display: flex;
+  padding: 0 31px 10px 28px;
+  gap: 16px;
+}
+
+.email {
+  padding: 0 31px 10px 28px;
+}
+.email__input {
+  width: 100%;
+  border: 1px solid #808080;
+  padding: 13px 0 13px 10px;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #808080;
+}
+
+.agreement {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #4c4c4c;
+  padding-left: 28px;
+  margin-bottom: 4px;
+}
+
+.checkbox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 28px;
+}
+.checkbox__input {
+  align-self: flex-start;
+  padding-top: 3px;
+  width: 14px;
+  height: 14px;
+}
+.checkbox__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #808080;
+  align-self: flex-start;
+}
+
+select {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #808080;
+  padding: 13px 0 13px 10px;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.name__class {
+  border: 1px solid #666666;
+  width: 100%;
+  padding: 13px 68px 13px 10px;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #808080;
+}
+
+.for__size {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 31px 13px 28px;
+  gap: 10px;
+}
+.for__size .input__1 {
+  width: 49%;
+}
+.for__size .input__2 {
+  width: 48%;
+}
+.for__size .input__3 {
+  width: 49%;
+}
+.for__size .input__4 {
+  width: 48%;
+}
+
+.form__button {
+  background: #2a79ee;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 12px 0px 14px;
+  margin: 44px 31px 42px 28px;
+  width: 90%;
+}
+
+.condition {
+  margin-bottom: 120px;
+}
+.condition__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 770px) {
+  .condition__container {
+    text-align: center;
+  }
+}
+.condition__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #072a5f;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+.condition__desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #666666;
+  margin-bottom: 36px;
+}
+.condition__line {
+  margin-left: -20px;
+}
+
+.line-2 {
+  transform: rotate(180deg);
+  margin-right: -20px;
+}
+
+.condition__text2 {
+  margin-left: 94px;
+}
+@media (max-width: 770px) {
+  .condition__text2 {
+    margin-left: 0;
+  }
+}
+
+.us {
+  background-color: #f5fafe;
+  margin-bottom: 120px;
+}
+.us__title {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+.us__subtitle {
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #666666;
+  text-align: center;
+  max-width: 869px;
+}
+.us__cards {
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.us__card {
+  padding-top: 40px;
+}
+.us__icon {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.us__number {
+  font-family: "Ubuntu";
+  font-size: 36px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #191919;
+  margin-bottom: 10px;
+}
+.us__desc {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #666666;
+}
+
+.city {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.city__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #333333;
+  padding-bottom: 20px;
+}
+.city__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #666666;
+  padding-bottom: 50px;
+}
+.city__images {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 120px;
+}
+.customer {
+  margin-bottom: 100px;
+}
+.customer__title {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #333333;
+  padding-bottom: 20px;
+}
+.customer__subtitle {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #666666;
+  padding-bottom: 54px;
+}
+.customer__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 21px;
+}
+.customer__card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+}
+.customer__card:hover {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.customer__img {
+  text-align: center;
+  padding: 20px 0 15px 0;
+}
+.customer__name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #333333;
+  padding-bottom: 8px;
+}
+.customer__star {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.customer__desc {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #666666;
+  padding: 0 10px 20px 10px;
+}
+
+.register {
+  margin-bottom: 100px;
+}
+.register__container {
+  background: #1266e3;
+  border-radius: 30px;
+  display: flex;
+  gap: 75px;
+}
+@media (max-width: 757px) {
+  .register__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+}
+.register__left {
+  padding: 91px 0px 0px 98px;
+}
+@media (max-width: 757px) {
+  .register__left {
+    padding-left: 48px;
+  }
+}
+.register__title {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.register__subtitle {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #ffffff;
+  max-width: 567px;
+  padding-bottom: 90px;
+}
+@media (max-width: 757px) {
+  .register__subtitle {
+    padding-bottom: 30px;
+  }
+}
+.register__card {
+  background: #ffffff;
+  border-radius: 15px;
+  margin: 60px 67px 60px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+@media (max-width: 757px) {
+  .register__card {
+    margin: 60px 0px 60px 0;
+  }
+}
+.register__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #666666;
+  padding: 28px 35px;
+}
+.register__text span {
+  color: #1266e3;
+}
+.register__button {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  padding: 11px 19px;
+  background: #1266e3;
+  box-shadow: 0px 20px 40px -10px rgba(24, 33, 255, 0.6);
+  border-radius: 10px;
+  margin: 0 62px 30px 63px;
+}
+
+.partners {
+  margin-bottom: 100px;
+}
+.partners__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partner {
+  cursor: pointer;
+}
+
+.footer {
+  background: #0d263c;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-right: 20px;
+}
+.footer__line {
+  width: 5px;
+  height: 194px;
+  background: #425879;
+  opacity: 0.4;
+  border-radius: 20px;
+  margin-top: 163px;
+  margin-left: 54px;
+}
+.footer__line div {
+  width: 5px;
+  height: 113px;
+  background: #04152f;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.footer__line2 {
+  width: 5px;
+  height: 194px;
+  background: #425879;
+  opacity: 0.4;
+  border-radius: 20px;
+  margin-top: 163px;
+  margin-left: -30px;
+}
+.footer__line2 div {
+  width: 5px;
+  height: 113px;
+  background: #04152f;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.footer__bottom {
+  background: #03182c;
+  width: 100%;
+  padding: 22px 23px;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.contact__title {
+  padding-bottom: 45px;
+  padding-top: 80px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #e7f0fd;
+}
+.contact__item {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  color: #e7faff;
+  padding-bottom: 30px;
+}
+.contact__item img {
+  padding-right: 20px;
+}
+.contact__line {
+  max-width: 265px;
+  border: 1px solid #fff;
+  opacity: 0.2;
+  margin: 10px 0 30px 0;
+}
+.contact__icons img {
+  padding-right: 36px;
+}
+.contact img {
+  cursor: pointer;
+}
+
+.first__item {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #e7f0fd;
+  padding: 80px 0 32px 0;
+}
+
+.discover {
+  display: flex;
+}
+.discover__item {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 46px;
+  text-decoration-line: underline;
+  color: #e7faff;
+  cursor: pointer;
+}
+
+.lists {
+  display: flex;
+}
+
+.links {
+  padding-bottom: 27px;
+}
+
+.flex {
+  display: flex;
+}

@@ -1,0 +1,245 @@
+.banner {
+  margin-bottom: 150px;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-top: -83px;
+  // .banner__container
+
+  &__container {
+    position: relative;
+    z-index: 5;
+    padding-top: 320px;
+
+    // position: absolute;
+  }
+
+  // .banner__desc
+
+  &__desc {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 83px;
+    color: #ffffff;
+
+    @media (max-width: 479px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  // .banner__btn
+
+  &__btn {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    z-index: 6;
+  }
+
+  // .banner__table
+
+  &__table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background: #fff;
+    border-radius: 0px 10px 10px 10px;
+    gap: 12px;
+    margin-right: 10px;
+    padding-left: 23px;
+  }
+
+  // .banner__table-1
+
+  &__table-1 {
+  }
+}
+.container {
+}
+.main {
+  // .main__title
+
+  &__title {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 105px;
+    margin-bottom: 7px;
+    color: #ffffff;
+
+    @media (max-width: 575px) {
+      font-weight: 500;
+    font-size: 60px;
+    line-height: 75px;
+    }
+  }
+}
+.btn-1 {
+  width: 112px;
+  height: 37px;
+  background: #ffffff;
+  opacity: 0.3;
+  border-radius: 6px 6px 0px 0px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #050810;
+
+  &:hover {
+    background-color: #fff;
+    border-radius: 6px 6px 0px 0px;
+    color: #050810;
+    opacity: 1;
+  }
+}
+
+.btn-2 {
+  width: 112px;
+  height: 37px;
+  background: #ffffff;
+  opacity: 0.3;
+  border-radius: 6px 6px 0px 0px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #050810;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 6px 6px 0px 0px;
+    color: #050810;
+    opacity: 1;
+  }
+}
+.btn-3 {
+  width: 112px;
+  height: 37px;
+  background: #ffffff;
+  opacity: 0.3;
+  border-radius: 6px 6px 0px 0px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #050810;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 6px 6px 0px 0px;
+    color: #050810;
+    opacity: 1;
+  }
+}
+.table {
+  // .table__top
+
+  &__top {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #999999;
+    padding-top: 13px;
+    padding-bottom: 8px;
+  }
+
+  // .table__bottom
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e7f0fd;
+    border-radius: 5px;
+    padding: 8px 0px 9px 10px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #191919;
+    .for__strelka {
+      padding-right: 17px;
+      padding-left: 55px;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      text-align: center;
+
+      span {
+        img {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  // .table__btn
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 46px;
+    background: #1266e3;
+    border-radius: 9.28725px;
+    height: 50px;
+    margin: 37px 20px 13px 20px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.table-3 {
+  min-width: 277px;
+}
+
+.back__image1 {
+  margin-bottom: 151px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  img {
+    width: 100%;
+    min-height: 1200px;
+    object-fit: cover;
+  }
+}
+
+.back__image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  img {
+    min-height: 1200px;
+    width: 100%;
+    object-fit: cover;
+  }
+}

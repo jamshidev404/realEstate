@@ -1,0 +1,87 @@
+.condition {
+  margin-bottom: 120px;
+  // .condition__container
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 20px;
+
+    @media (max-width: 770px) {
+        text-align: center;
+    }
+  }
+
+  // .condition__wrapper
+
+  &__wrapper {
+  }
+
+  // .condition__text1
+
+  &__text1 {
+  }
+
+  // .condition__title
+
+  &__title {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #072a5f;
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
+
+  // .condition__desc
+
+  &__desc {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #666666;
+    margin-bottom: 36px;
+  }
+
+  // .condition__line
+
+  &__line {
+    margin-left: -20px;
+  }
+}
+.container {
+}
+.image1 {
+}
+.image3 {
+}
+
+.desc-2 {
+    // text-align: center;
+}
+
+.title-2 {
+// text-align: center;
+}
+
+.line-2 {
+   transform: rotate(180deg);
+   margin-right: -20px;     
+}
+
+.condition__text2 {
+    // text-align: center;
+    margin-left: 94px;
+
+    @media (max-width: 770px) {
+        margin-left: 0;
+    }
+}

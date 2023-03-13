@@ -1,0 +1,86 @@
+.us {
+  background-color: #f5fafe;
+  margin-bottom: 120px;
+  // .us__container
+
+  &__container {
+  }
+
+  // .us__title
+
+  &__title {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 51px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #333333;
+    text-align: center;  
+    margin-bottom: 20px;
+    padding-top: 100px;
+  }
+
+  // .us__subtitle
+
+  &__subtitle {
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #666666;
+    text-align: center;
+    max-width: 869px;   
+  }
+
+  // .us__cards
+
+  &__cards {
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  // .us__card
+
+  &__card {
+    padding-top: 40px;
+  }
+
+  // .us__icon
+
+  &__icon {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  // .us__number
+
+  &__number {
+    font-family: "Ubuntu";
+    font-size: 36px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #191919;
+    margin-bottom: 10px;
+  }
+
+  // .us__desc
+
+  &__desc {
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #666666;
+  }
+}
+.container {
+}

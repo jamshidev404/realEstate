@@ -1,0 +1,17 @@
+.wrapper {
+  background: #F8F9FB;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+ }
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 0 0 auto;
+}
